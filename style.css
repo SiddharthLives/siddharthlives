@@ -62,7 +62,7 @@ header {
   padding: 20px;
   margin: 20px 40px;
 
-  background-image: url("images/me45.jpeg");
+  background-image: url("me45.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -108,7 +108,7 @@ image {
   padding: 20px;
   height: 200px;
   border-radius: 12px;
-  background-image: url(images/flower.png);
+  background-image: url(flower.png);
 
   background-repeat: no-repeat;
   background-position: bottom center;
