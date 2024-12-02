@@ -2,7 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background-color: rgb(249, 237, 249);
 
