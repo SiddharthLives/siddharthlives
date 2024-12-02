@@ -1,0 +1,279 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(249, 237, 249);
+
+  font-family: "Outfit", sans-serif;
+}
+header {
+  background-color: #4b3859;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #efd9fa;
+
+  font-family: "Outfit", serif;
+
+  margin: 0px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 0.75fr 2fr;
+  grid-template-rows: auto auto;
+}
+.welcome {
+  grid-area: 1/1/3/2;
+  text-align: end;
+  font-size: 7vw;
+}
+.tomy {
+  display: inline-block;
+  grid-area: 1/2/2/3;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 2.5vw;
+}
+.first {
+  display: inline-block;
+  grid-area: 2/2/3/3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vw;
+}
+.website {
+  display: inline-block;
+  grid-area: 1/3/3/4;
+  text-align: start;
+  font-size: 7vw;
+}
+
+.myself {
+  color: rgb(82, 81, 82);
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 15px;
+  min-height: 200px;
+  max-height: fit-content;
+  padding: 20px;
+  margin: 20px 40px;
+
+  background-image: url("images/me45.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-blend-mode: darken;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 25px 1fr;
+}
+.bio {
+  color: rgb(33, 35, 35);
+  font-family: "Outfit", sans-serif;
+}
+.det {
+  color: rgb(63, 63, 63);
+  grid-area: 2/1/3/2;
+}
+image {
+  z-index: -1;
+}
+.greet {
+  color: #4d2f5d;
+  background-color: #e7c8f9;
+  margin: 40px;
+  padding: 20px;
+  min-height: 200px;
+  max-height: fit-content;
+  border-radius: 12px;
+
+  display: grid;
+  grid-template-rows: auto 1.5fr 0.5fr;
+}
+.connect1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.board {
+  color: #4d2f5d;
+  background-color: rgba(231, 200, 249, 1);
+  margin: 40px;
+  padding: 20px;
+  height: 200px;
+  border-radius: 12px;
+  background-image: url(images/flower.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.list {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  line-height: 25px;
+}
+.connect {
+  width: 70%;
+  color: rgb(250, 250, 250);
+  font-size: 1em;
+  background-color: #4b3859;
+  margin-top: 20px;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
+@media (min-width: 349px) and (max-width: 405px) {
+  .myself {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 348px) {
+  .myself {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+@media (min-width: 392px) {
+  .bio {
+    font-size: 1.1em;
+  }
+}
+.intro {
+  color: rgb(82, 81, 82);
+  background-color: #d6d4d7;
+  padding: 20px 35px;
+  height: 300px;
+
+  margin: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+@media (min-width: 700px) {
+  main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .board {
+    grid-area: 2/2/3/3;
+    background-size: 35%;
+  }
+  #intro {
+    grid-area: 2/1/3/2;
+  }
+  .det {
+    font-size: 1.17em;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    justify-content: center;
+  }
+  .board {
+    background-size: 55%;
+  }
+}
+
+footer {
+  font-size: 1.5em;
+  color: beige;
+  text-align: center;
+  bottom: 0px;
+  padding: 15px;
+  background-color: rgb(47, 71, 88);
+  font-family: monospace;
+}
+.insta {
+  background: radial-gradient(
+    circle at 15% 15%,
+
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  height: 100vh;
+  margin: 0;
+}
+.chess {
+  background: radial-gradient(
+    circle at 15% 15%,
+    rgb(182, 216, 118),
+    rgb(105, 145, 81)
+  );
+  height: 100vh;
+  margin: 0;
+}
+.twitter {
+  background-color: rgb(29, 161, 242);
+  background: radial-gradient(
+    circle at 15% 15%,
+
+    rgb(14, 136, 212),
+    rgb(130, 187, 222)
+  );
+}
+.github {
+  background: radial-gradient(
+    circle at 15% 15%,
+    rgb(0, 0, 0),
+    rgb(120, 120, 120)
+  );
+  height: 100vh;
+  margin: 0;
+}
+.insta,
+.chess,
+.twitter,
+.github {
+  font-size: 1.4em;
+  color: white;
+  display: inline-block;
+  align-content: center;
+  width: 95%;
+  height: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+button {
+  color: #4d2f5d;
+  background-color: #4d2f5d;
+  border-radius: 6px;
+  border: 0px;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(46, 100, 154);
+}
+.arrow {
+  color: #4d2f5d;
+  width: 30px;
+  padding: 0px 5px;
+  background-color: #4d2f5d;
+  border-radius: 6px;
+}
+.arrow:hover {
+  background: rgb(129, 101, 166);
+}
+#igbtn {
+  display: flex;
+  justify-content: center;
+}
